@@ -5,54 +5,61 @@ body{
     padding:15px;
 }
 
+/* MAIN BOX */
 .container{
     max-width:700px;
     margin:auto;
     background:white;
-    padding:15px;
+    padding:20px;
     border-radius:12px;
     box-shadow:0 4px 15px rgba(0,0,0,0.2);
 }
 
+/* TITLE */
 h2{
     text-align:center;
-    font-size:16px;
+    font-size:18px;
     color:#333;
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
 
+/* COUNTER */
 #counter{
     text-align:center;
-    font-size:11px;
+    font-size:12px;
     font-weight:bold;
     color:#555;
     margin-bottom:10px;
 }
 
+/* QUESTION */
 #question{
-    font-size:13px;
+    font-size:14px;
     margin-bottom:10px;
     color:#222;
     line-height:1.4;
 }
 
+/* OPTIONS */
 .option{
     display:block;
     width:100%;
-    padding:8px;
+    padding:10px;
     margin:6px 0;
     border:none;
     border-radius:6px;
     background:#f0f0f0;
     cursor:pointer;
-    font-size:11px;
+    font-size:13px;
     text-align:left;
+    transition:0.2s;
 }
 
 .option:hover{
     background:#dcdcdc;
 }
 
+/* ANSWER COLORS */
 .correct{
     background:#90ee90;
 }
@@ -61,15 +68,16 @@ h2{
     background:#ff9999;
 }
 
+/* NEXT BUTTON */
 #nextBtn{
     width:100%;
-    padding:8px;
+    padding:10px;
     margin-top:10px;
     border:none;
     border-radius:6px;
     background:#007bff;
     color:white;
-    font-size:11px;
+    font-size:14px;
     cursor:pointer;
 }
 
@@ -77,11 +85,59 @@ h2{
     background:#0056b3;
 }
 
+/* RESULT BOX */
 #result{
     margin-top:10px;
-    padding:8px;
+    padding:10px;
     background:#f8f8f8;
     border-radius:6px;
-    font-size:11px;
+    font-size:13px;
     line-height:1.4;
+}
+
+/* TIMER */
+#timer{
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+    color:red;
+    margin-bottom:15px;
+}
+
+/* LOGIN INPUTS */
+input,
+select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    font-size:14px;
+    border:1px solid #999;
+    border-radius:8px;
+    box-sizing:border-box;
+}
+
+/* LOGIN BUTTON */
+#loginPage button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+#loginPage button:hover{
+    background:#0056b3;
+}
+
+/* 📄 CERTIFICATE BUTTON (NEW ADD) */
+button {
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.02);
 }

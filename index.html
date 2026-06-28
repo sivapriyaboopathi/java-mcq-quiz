@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,23 +8,60 @@
 </head>
 <body>
 
-<div class="container">
+    <!-- Login Page -->
+    <div class="container" id="loginPage">
 
-    <h2>Java MCQ Question</h2>
+        <h2>Java MCQ Quiz</h2>
 
-    <div id="counter"></div>
+        <input type="text" id="name" placeholder="👤 Full Name">
 
-    <div id="question-box">
-        <h3 id="question"></h3>
+        <input type="email" id="email" placeholder="📧 Email ID">
+
+        <select id="department">
+            <option value="">🏫 Select Department</option>
+            <option>B.Sc Computer Science</option>
+            <option>BCA</option>
+            <option>B.Tech IT</option>
+            <option>B.Tech CSE</option>
+            <option>MCA</option>
+            <option>Others</option>
+        </select>
+
+        <input type="text" id="regno" placeholder="🎓 Register Number">
+
+        <button onclick="startQuiz()">▶️ Start Quiz</button>
+
     </div>
 
-    <div id="options"></div>
+    <!-- Quiz Page -->
+    <div class="container" id="quizPage" style="display:none;">
 
-    <div id="result"></div>
+        <h2>Java MCQ Question</h2>
 
-    <button id="nextBtn">Next Question</button>
-</div>
-<script src="questions.js"></script>
-<script src="script.js"></script>
+        <div id="counter"></div>
+
+        <div id="timer">⏰ Time Left: 30 sec</div>
+
+        <div id="question-box">
+            <h3 id="question"></h3>
+        </div>
+
+        <div id="options"></div>
+
+        <div id="result"></div>
+
+        <button id="nextBtn">Next Question</button>
+
+    </div>
+
+    <!-- Java Questions -->
+    <script src="questions.js"></script>
+
+    <!-- jsPDF Library (IMPORTANT) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <!-- Quiz Logic -->
+    <script src="script.js"></script>
+
 </body>
 </html>
